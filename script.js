@@ -1,15 +1,3 @@
-document.addEventListener('scroll', () => {
-    const layers = document.querySelectorAll('.parallax-layer');
-    const scrollTop = window.pageYOffset;
-
-    layers.forEach((layer, index) => {
-        const speed = (index + 1) * 0.2; // Velocidade diferenciada para cada camada
-        const offset = scrollTop * speed;
-        layer.style.transform = `translateX(${offset}px)`; // Move horizontalmente com base no scroll
-    });
-});
-
-
 // Garante que o scroll funcione no parallax
 document.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('.parallax-container');

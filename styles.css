@@ -115,54 +115,34 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgb(135, 206, 235), rgba(255, 255, 255, 0.5)); /* Azul "céu" */
-    z-index: -2; /* Fica no fundo */
+    background: linear-gradient(to bottom, rgb(8, 80, 109), rgba(255, 255, 255, 0.5)); /* Azul "céu" */
+    z-index: -2; /* Fica atrás da camada de nuvem */
 }
 
 .parallax-layer {
     position: absolute;
     top: 0;
     left: 0;
-    width: 300%; /* Aumenta o tamanho horizontal para evitar cortes */
+    width: 100%;
     height: 100%;
-    background-size: auto 100%; /* Ajusta a altura proporcionalmente */
-    background-repeat: repeat-x; /* Repete horizontalmente */
+    background-size: cover; /* Garante que a imagem cubra o espaço */
+    background-repeat: no-repeat; /* Remove repetições */
     z-index: -1; /* Fica acima do gradiente */
 }
 
-/* Específicos de Nuvens */
 .parallax-one {
     background-image: url('c1.png');
-    animation: moveClouds 120s linear infinite; /* Animação contínua */
+    background-attachment: fixed;
 }
 
 .parallax-two {
     background-image: url('c2.png');
-    animation: moveCloudsReverse 125s linear infinite;
+    background-attachment: fixed;
 }
 
 .parallax-three {
     background-image: url('c3.png');
-    animation: moveClouds 130s linear infinite;
-}
-
-/* Animações */
-@keyframes moveClouds {
-    from {
-        transform: translateX(0); /* Início */
-    }
-    to {
-        transform: translateX(-100%); /* Move uma largura completa */
-    }
-}
-
-@keyframes moveCloudsReverse {
-    from {
-        transform: translateX(0); /* Início */
-    }
-    to {
-        transform: translateX(100%); /* Move na direção inversa */
-    }
+    background-attachment: fixed;
 }
 
 
