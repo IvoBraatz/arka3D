@@ -1,106 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Smooth Parallax</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Parallax Dinâmico Suave</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header>
         <div class="header-container">
-            <h1 class="logo">BrandName</h1>
+            <h1 class="logo">ARKA<span class="destaque">3D</span></h1>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="#get-started" class="btn">Get Started</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     
+    
     <section class="hero">
-        <div class="hero-content">
-            <h1>Welcome to Our World</h1>
-            <p>Discover endless possibilities and explore beyond limits.</p>
-            <a href="#about" class="hero-btn">Learn More</a>
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Serviços Diversificados.<br>Qualidade Constante.</h1>
+                <div class="hero-buttons">
+                    <a href="#work" class="hero-btn">Veja Nosso Trabalho</a>
+                </div>
+            </div>
+            <div class="marquee">
+                <div class="track">
+                  <div class="content-track">
+                    <img src="./img/spark.webp" alt="">
+                    <img src="./img/spona.webp" alt="">
+                    <img src="./img/olla.webp" alt="">
+                    <img src="./img/blogaz.webp" alt="">
+
+                    <img src="./img/spark.webp" alt="">
+                    <img src="./img/spona.webp" alt="">
+                    <img src="./img/olla.webp" alt="">
+                    <img src="./img/blogaz.webp" alt="">
+
+                    <img src="./img/spark.webp" alt="">
+                    <img src="./img/spona.webp" alt="">
+                    <img src="./img/olla.webp" alt="">
+                    <img src="./img/blogaz.webp" alt="">
+                  </div>
+                </div>
+              </div>
         </div>
     </section>
     
+    
+    
+    
     <div class="parallax-container">
-        <div class="parallax-gradient"></div> <!-- Fundo gradiente (céu) -->
-        <div class="parallax-layer parallax-one"></div> <!-- Nuvens fixas -->
+        <div class="parallax-gradient"></div>
+        <div class="parallax-layer parallax-one"></div>
         <div class="parallax-text">
-            <h1>Beginning</h1>
+            <h1>Começo</h1>
+            <p class="content-parallax">Projetamos mais de 100 projetos comerciais e residenciais nos EUA e ao redor do mundo. Fornecemos suporte de design e 3D para empresas de arquitetura globalmente. Empresa premiada com mais de 17 anos de experiência.</p>
+            <a href="#services" class="cta-button">Explore Nossos Projetos</a>
         </div>
         <div class="parallax-images">
-            <img src="b1.png" alt="Building 1" class="building">
+            <img src="./img/b1.webp" alt="Prédio 1" class="building">
         </div>
     </div>
     
-    
-    <!-- Nova Seção de Cards -->
     <section class="cards-section">
         <div class="content">
-            <h2>Explore the Possibilities</h2>
-            <p>Discover various opportunities and branches available for your construction projects. Explore more below!</p>
+            <h2>Explore as Possibilidades</h2>
+            <p>Descubra diversas oportunidades e áreas disponíveis para seus projetos de construção. Explore mais abaixo!</p>
         </div>
         <div class="cards">
             <div class="card">
-                <img src="canadian2.png" alt="Canadian Construction" />
-                <h3>Canadian Construction Branches</h3>
-                <p>We'll supply you with materials to create your dream property from foundation to finish. Call to get started!</p>
-                <a href="#" class="read-more">Read More <span>&#8250;</span></a>
+                <img src="./img/canadian2.webp" alt="Construção Canadense" />
+                <h3>Filiais de Construção no Canadá</h3>
+                <p>Fornecemos materiais para criar a propriedade dos seus sonhos, desde a fundação até o acabamento. Ligue para começar!</p>
+                <a href="#" class="read-more">Leia Mais <span>&#8250;</span></a>
             </div>
             <div class="card">
-                <img src="australian2.png" alt="Australian Construction" />
-                <h3>Australian Construction Branches</h3>
-                <p>We'll supply you with materials to create your dream property from foundation to finish. Call to get started!</p>
-                <a href="#" class="read-more">Read More <span>&#8250;</span></a>
+                <img src="./img/australian2.webp" alt="Construção Australiana" />
+                <h3>Filiais de Construção na Austrália</h3>
+                <p>Fornecemos materiais para criar a propriedade dos seus sonhos, desde a fundação até o acabamento. Ligue para começar!</p>
+                <a href="#" class="read-more">Leia Mais <span>&#8250;</span></a>
             </div>
             <div class="card">
-                <img src="brazilian2.png" alt="Brazilian Construction" />
-                <h3>Brazilian Construction Branches</h3>
-                <p>We'll supply you with materials to create your dream property from foundation to finish. Call to get started!</p>
-                <a href="#" class="read-more">Read More <span>&#8250;</span></a>
+                <img src="./img/brazilian2.webp" alt="Construção Brasileira" />
+                <h3>Filiais de Construção no Brasil</h3>
+                <p>Fornecemos materiais para criar a propriedade dos seus sonhos, desde a fundação até o acabamento. Ligue para começar!</p>
+                <a href="#" class="read-more">Leia Mais <span>&#8250;</span></a>
             </div>
         </div>
     </section>
     
-    
-    <div class="parallax-container">
-        <div class="parallax-gradient"></div> <!-- Fundo gradiente (céu) -->
-        <div class="parallax-layer parallax-two"></div> <!-- Nuvens fixas -->
+    <div class="parallax-container inverse-parallaxs">
+        <div class="parallax-gradient"></div>
+        <div class="parallax-layer parallax-two"></div>
         <div class="parallax-text">
-            <h1>Dream Big</h1>
+            <h1>Sonhe Grande</h1>
+            <p class="content-parallax">Transformamos seus sonhos em realidade com projetos únicos e a poucos cliques de distância!</p>
+            <a href="#contact" class="cta-button">Fale Conosco</a>
         </div>
         <div class="parallax-images">
-            <img src="b2.png" alt="Building 2" class="building">
+            <img src="./img/b2.webp" alt="Prédio 2" class="building">
         </div>
     </div>
     
-    <!-- Nova Seção Texto + Imagem -->
-    <section class="text-section">
-        <div class="text-content">
-            <h2>Innovate Your Future</h2>
-            <p>Combine creativity with technology to shape the future. Your journey starts here.</p>
-        </div>
-        <div class="image-content">
-            <img src="future.jpg" alt="Innovation">
-        </div>
-    </section>
-    
-    <div class="parallax-container">
-        <div class="parallax-gradient"></div> <!-- Fundo gradiente (céu) -->
-        <div class="parallax-layer parallax-three"></div> <!-- Nuvens fixas -->
-        <div class="parallax-text">
-            <h1>Achieve More</h1>
-        </div>
-        <div class="parallax-images">
-            <img src="b3.png" alt="Building 3" class="building">
+    <div class="quote-section">
+        <div class="quote-container">
+            <div class="quote-text">
+                <h2>Solicite um Orçamento Gratuito Agora!</h2>
+                <form class="quote-form">
+                    <input type="email" placeholder="Seu e-mail de trabalho" required>
+                    <button type="submit">Entrar na lista</button>
+                </form>
+            </div>
         </div>
     </div>
+
+    <div class="parallax-container">
+        <div class="parallax-gradient"></div>
+        <div class="parallax-layer parallax-two"></div>
+        <div class="parallax-text">
+            <h1>Inove seu futuro</h1>
+            <p class="content-parallax">Combine criatividade com tecnologia para moldar o futuro. Sua jornada começa aqui.</p>
+            <a href="#contact" class="cta-button">Fale Conosco</a>
+        </div>
+        <div class="parallax-images">
+            <img src="./img/b3.webp" alt="Prédio 2" class="building">
+        </div>
+    </div>
+    
+    <footer class="custom-footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <P class="logo">ARKA<span class="destaque">3d</span></P>
+                <ul class="footer-links">
+                    <li><a href="#">Baixar Agora</a></li>
+                    <li><a href="#">Licença</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Funcionalidades</a></li>
+                    <li><a href="#">Preços</a></li>
+                    <li><a href="#">Carreiras</a></li>
+                    <li><a href="#">Ajuda</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                </ul>
+                <p class="footer-copy">&copy; 2024 ARKA3D. Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
     
     <script src="script.js"></script>
 </body>

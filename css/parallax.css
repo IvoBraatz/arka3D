@@ -1,0 +1,175 @@
+/* Estilo base do parallax */
+.parallax-container {
+    position: relative;
+    height: 90vh; /* Altura ajustada para manter proporção em telas maiores */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.parallax-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgb(8, 80, 109), rgba(255, 255, 255, 0.5)); /* Azul "céu" */
+    z-index: -2; /* Fica atrás da camada de nuvem */
+}
+
+.parallax-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover; /* Garante que a imagem cubra o espaço */
+    background-repeat: no-repeat; /* Remove repetições */
+    z-index: -1; /* Fica acima do gradiente */
+}
+
+.parallax-one {
+    background-image: url('../img/c1.webp');
+    background-attachment: fixed;
+}
+
+.parallax-two {
+    background-image: url('../img/c2.webp');
+    background-attachment: fixed;
+}
+
+.parallax-three {
+    background-image: url('../img/c3.webp');
+    background-attachment: fixed;
+}
+
+/* Texto no parallax */
+.parallax-text {
+    z-index: 1;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    max-width: 60%;
+    margin: auto;
+}
+
+.content-parallax {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: center;
+    max-width: 50%;
+    margin: auto;
+    text-transform: none;
+}
+
+/* Imagens do parallax */
+.parallax-images {
+    position: relative;
+    width: 40%; /* Ajustado para maior equilíbrio */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.building {
+    position: absolute;
+    bottom: 0;
+    width: 80%; /* Mantém tamanho proporcional */
+    height: auto;
+    object-fit: cover;
+    transform: translateY(10%);
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.6));
+    z-index: 2;
+}
+
+/* Botões no parallax */
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #c50000;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff3f31;
+    transform: scale(1.05);
+}
+
+/* Responsividade */
+@media screen and (max-width: 1024px) {
+    .parallax-container {
+        height: 65vh; /* Reduz para telas médias */
+    }
+
+    .parallax-text {
+        font-size: 1.8rem;
+    }
+
+    .content-parallax {
+        font-size: 1rem;
+        max-width: 70%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .parallax-container {
+        height: 50vh; /* Reduz para telas menores */
+    }
+
+    .parallax-text {
+        font-size: 1.5rem;
+    }
+
+    .content-parallax {
+        font-size: 0.9rem;
+        max-width: 80%;
+    }
+
+    .parallax-images {
+        width: 50%;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .parallax-container {
+        height: 40vh;
+    }
+
+    .parallax-text {
+        font-size: 1.2rem;
+    }
+
+    .content-parallax {
+        font-size: 0.8rem;
+        max-width: 90%;
+    }
+
+    .parallax-images {
+        width: 60%;
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
